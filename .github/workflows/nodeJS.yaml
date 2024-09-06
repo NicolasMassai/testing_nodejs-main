@@ -22,4 +22,4 @@ jobs:
 
         - run: vercel build --prod --token=0Hh4Km2vsHAHo1SA4hZgOTkc
 
-        - run: vercel deploy --prod --token=0Hh4Km2vsHAHo1SA4hZgOTkc
+        - run: vercel deploy --prebuilt --prod --token=0Hh4Km2vsHAHo1SA4hZgOTkc
