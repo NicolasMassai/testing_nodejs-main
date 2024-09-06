@@ -20,6 +20,8 @@ jobs:
         - run: npm install --global vercel@latest
         - run: npm test
 
-        - run: vercel build --prod --token=0Hh4Km2vsHAHo1SA4hZgOTkc
+        - run: vercel pull --yes --environment=preview --token=0Hh4Km2vsHAHo1SA4hZgOTkc
+
+        - run: vercel build --token=0Hh4Km2vsHAHo1SA4hZgOTkc
 
         - run: vercel deploy --prebuilt --prod --token=0Hh4Km2vsHAHo1SA4hZgOTkc
